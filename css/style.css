@@ -1,0 +1,110 @@
+:root {
+
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+  
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+  
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  body {
+    margin: 0;
+    display: flex;
+    place-items: center;
+    min-width: 320px;
+    min-height: 100vh;
+  }
+  
+
+  /* Estilo para los encabezados de columna */
+.column-header {
+  font-size: xx-large;
+  border-top-left-radius: 2em;
+  border-top-right-radius: 2em;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+  background-color: rgb(75, 215, 240);
+  color: black;
+  font-family: cursive;
+  /* Color del texto para los encabezados de columna */
+  /* Agrega otras propiedades de estilo según sea necesario */
+}
+
+.celdas {
+  border-radius: 1em;
+  padding: 8px;
+  font-family: cursive;
+  background: linear-gradient(128.84deg, #FFD1DC 20.46%, #FFC0CB 72.3%); /* Cambiado a tonos de rosado claro */
+  color: black;
+  border: 1px solid #FFC0CB; /* Ajusta el borde para que combine con el gradiente */
+  font-size: 28px;
+  line-height: 1.8;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+
+.celdas :hover {
+    border: 2px solid #3595ee;
+    background: linear-gradient(128.84deg, #025caa 20.46%, #222b91 72.3%);
+    box-shadow: 0px 4px 20px linear-gradient(128.84deg, #0f6cbd 20.46%, #3c45ab 72.3%);
+    text-shadow: 1px 2px 10px linear-gradient(128.84deg, #0f6cbd 20.46%, #3c45ab 72.3%);
+    color: #ffffff;
+    font-weight: 900;
+  }
+
+  
+
+  
+  .button {
+    font-family: "Courier New";
+    color: #ffffff;
+    font-size: 35px;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 100px;
+    box-shadow: 0px 1px 3px #666666;
+    text-shadow: 1px 1px 3px #666666;
+    cursor: pointer;
+  }
+  
+  /* No todos los buttón van a hacer @include, porque algunos tienen otros estilos para el hover*/
+  .button-green {
+    border: 2px solid #1d6b29;
+    background: linear-gradient(to bottom, #7fff6b, #007808);
+  }
+  .button-green:hover {
+    border: 2px solid #4e8b4d;
+    background: linear-gradient(to bottom, #666666, #000000);
+    box-shadow: 0px 4px 20px linear-gradient(to bottom, #7fff6b, #007808);
+    text-shadow: 1px 2px 10px linear-gradient(to bottom, #7fff6b, #007808);
+    color: #daa520;
+  }
+  .button-green:active {
+    border: 2px solid #4e8b4d;
+    color: #FF69B4;
+    background: linear-gradient(to bottom, #ffffff, #666666);
+    box-shadow: 0px 4px 20px linear-gradient(to bottom, #7fff6b, #007808);
+  }
+
+  
+  @media (prefers-color-scheme: light) {
+    :root {
+      color: #213547;
+      background-color: #ffffff;
+    }
+    a:hover {
+      color: #747bff;
+    }
+    button {
+      background-color: #f9f9f9;
+    }
+  }
+  
